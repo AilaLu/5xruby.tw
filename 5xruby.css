@@ -1,0 +1,524 @@
+:root {
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+  width: 1200px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* nav_bar ---------------------------------------------------*/
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.nav_bar .brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav_bar .brand img {
+  /* Ruby diamond */
+  width: 40px;
+  aspect-ratio: auto 40 / 24;
+}
+
+/* banner ------------------------------------------------------*/
+
+.banner img {
+  width: 100%;
+  border-radius: 0.375rem;
+  margin-bottom: 50px;
+}
+
+.nav_bar .link {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.nav_bar .link a {
+  text-decoration: none;
+  padding: 0 5px;
+  font-size: 15px;
+}
+
+/* value----------------------------------------------------- */
+
+.value {
+  margin-bottom: 250px;
+}
+
+.value .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value h1 {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.value .group {
+  display: flex;
+}
+
+.value .group .item img {
+  width: 100%;
+  width: 230px;
+  aspect-ratio: auto 230 / 175;
+}
+
+.value .group .item {
+  width: 370px;
+  margin: 15px;
+}
+
+/* instructor------------------------------------------------ */
+
+.instructor {
+  margin-bottom: 100px;
+}
+
+.instructor .text {
+}
+
+.instructor .text h1 {
+  margin: 10px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.instructor .text h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.instructor .group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.instructor .group .item {
+  width: 570px;
+  box-sizing: border-box;
+  padding: 40px;
+  border-radius: 0.375rem;
+  border: solid 1px lightgrey;
+  margin: 15px;
+}
+
+.instructor .group .item .img_info {
+  display: flex;
+  margin: 20px 0;
+}
+
+.instructor .group .item img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+
+.instructor .group .item .info {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+.instructor .group .item .info p {
+  margin: 0 0 20px 0;
+}
+
+.instructor .group .item .info .icon {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.instructor .group .item .info .icon a {
+  display: inline-block;
+}
+
+.instructor .group .item .text {
+  border-top: solid 1px lightgray;
+  padding-top: 20px;
+}
+
+.instructor .group .item .other {
+  margin: 10px;
+}
+
+.instructor .group .item .link {
+  display: flex;
+  flex-direction: column;
+}
+
+.instructor .group .item .link a {
+  color: salmon;
+  text-decoration: none;
+  border: solid 1px salmon;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 0.375rem;
+  margin: 3px 5px;
+}
+
+svg {
+  /*icon*/
+  color: grey;
+  height: 15px;
+  width: 15px;
+  margin-right: 8px;
+}
+
+/* press------------------------------------------------------- */
+
+.press {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.press .title {
+  font-size: 30px;
+  margin: 30px 0;
+}
+
+.press .group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.press .group .item {
+  /* border: solid 1px grey; */
+  width: 570px;
+  box-sizing: border-box;
+  margin: 15px;
+  padding: 15px;
+}
+
+.press .group .item .source {
+  color: grey;
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.press .group .item a {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 25px;
+  color: rgb(red, green, rgb(30, 30, 62));
+}
+
+.more {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.more a {
+  /*看更多課程裡面的超連結*/
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  width: fit-content;
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
+/* short_course------------------------------------------------ */
+
+.short_course {
+  background-color: rgb(39, 36, 36);
+  color: white;
+  display: flex;
+  padding: 200px;
+}
+
+.short_course .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 470px;
+  height: 470px;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.short_course .text h1 {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.short_course .text h2 {
+  color: grey;
+  font-size: 20px;
+}
+
+.short_course .red_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: salmon;
+  width: 470px;
+  height: 470px;
+}
+
+.short_course .red_block .go a {
+  margin: 10px 0;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+}
+
+/* latest_course--------------------------------------- */
+
+.latest_course {
+  background-color: rgb(39, 36, 36);
+  padding-bottom: 200px;
+}
+
+.latest_course .title {
+  /*近期課程*/
+  color: white;
+  font-size: 25px;
+  margin: 0 0 30px 0;
+}
+
+.latest_course .group {
+  /*三塊模板*/
+  margin: 0px auto 50px auto;
+  display: flex;
+}
+
+.latest_course .group .item {
+  /* 單一模板 */
+  width: 370px;
+  color: rgb(139, 135, 135);
+  background-color: white;
+  margin: 0px 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.latest_course .group .item .item_img {
+  width: 100%;
+  margin-bottom: 8px;
+  /* border-top-right-radius: 10px;
+        border-top-left-radius: 10px;  
+        這兩行也可以用在父層overflow: hidden來取代*/
+}
+
+.latest_course .group .item .date {
+  /*2022 / 7 月班*/
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 16px;
+  width: fit-content;
+  border: 1px solid lightgrey;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.instructor_level {
+  /*instructor+level*/
+  font-size: 12px;
+  margin: 8px 16px;
+  border-top: 1px solid lightgrey;
+  padding-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.instructor_level .instructor {
+  /*講師*/
+  display: flex;
+  align-items: center;
+}
+
+svg {
+  /*icon*/
+  height: 15px;
+  width: 15px;
+  margin-right: 8px;
+}
+
+.instructor_level .level {
+  /*課程*/
+  display: flex;
+  align-items: center;
+}
+
+.level .c1 {
+  color: rgb(54, 166, 231);
+}
+.level .c2 {
+  color: salmon;
+}
+.level .c3 {
+  color: rgba(27, 215, 215, 0.71);
+}
+
+.more_courses {
+  /*看更多課程*/
+  /* display: flex;
+    justify-content: center; 
+    也可以用text-align: center;*/
+  text-align: center;
+}
+
+.more_courses a {
+  /*看更多課程裡面的超連結*/
+  text-decoration: none;
+  color: white;
+  background-color: red;
+  width: fit-content;
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
+/* Learning ------------------------------------------ */
+
+.learning {
+}
+
+.learning h1 {
+  margin: 30px 0;
+  font-size: 30px;
+}
+
+h2 {
+  /* margin: 10px 0; */
+  font-size: 20px;
+}
+
+.learning .group {
+  display: flex;
+}
+
+.learning .group .item {
+  width: 570px;
+  box-sizing: border-box;
+  border: solid 1px lightgrey;
+  margin: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.learning .group .item .background_pic {
+  vertical-align: baseline;
+  background-image: linear-gradient(
+      rgba(24, 35, 45, 0.4),
+      rgba(24, 35, 45, 0.4)
+    ),
+    url(https://62b9045…--5xtraining.netlify.app/_next/static/images/learning-im_coding_it-2e61e20….png);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.learning .group .item .learn .title {
+  margin: 15px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px lightgrey;
+}
+
+.learning .group .item .learn .text {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.learning .group .item a {
+  color: salmon;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+}
+
+.learning .group .item a:hover {
+  text-decoration: underline;
+}
+
+/* reviews------------------------------------------ */
+/* articles------------------------------------------ */
+.article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article .title {
+  margin: 30px 0;
+  font-size: 30px;
+}
+
+.article .group {
+  display: flex;
+}
+
+.article .group .item {
+  width: 570px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article img {
+  width: 100%;
+  border-radius: 0.375rem;
+  margin-bottom: 30px;
+}
+
+.article .group .item a {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 25px;
+  color: rgb(red, green, rgb(30, 30, 62));
+  margin-bottom: 15px;
+}
+
+.article .source {
+  color: grey;
+  font-size: 13px;
+}
+
+/* footer------------------------------------------ */
+
+.footer {
+  background-color: rgb(39, 36, 36);
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  padding: 200px;
+}
+
+.logo_map {
+  display: flex;
+}
+.footer .info .link {
+  display: flex;
+  flex-direction: column;
+}
+.map {
+  display: flex;
+  flex-direction: column;
+}
+
+.row .social {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+.legal {
+  background-color: black;
+  text-align: center;
+}
