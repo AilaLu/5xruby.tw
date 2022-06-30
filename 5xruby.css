@@ -283,6 +283,7 @@ svg {
 .latest_course {
   background-color: rgb(39, 36, 36);
   padding-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .latest_course .title {
@@ -388,6 +389,7 @@ svg {
 /* Learning ------------------------------------------ */
 
 .learning {
+  margin-bottom: 200px;
 }
 
 .learning h1 {
@@ -414,14 +416,23 @@ h2 {
 }
 
 .learning .group .item .background_pic {
-  vertical-align: baseline;
+  width: 570px;
+  height: 150px;
   background-image: linear-gradient(
       rgba(24, 35, 45, 0.4),
       rgba(24, 35, 45, 0.4)
     ),
-    url(https://62b9045…--5xtraining.netlify.app/_next/static/images/learning-im_coding_it-2e61e20….png);
+    url(https://62baa5b3caa1e037e40014e4--5xtraining.netlify.app/_next/static/images/learning-im_coding_it-2e61e20cb43462295664b6dcfe31b74a.png);
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.background_pic h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .learning .group .item .learn .title {
@@ -449,6 +460,48 @@ h2 {
 }
 
 /* reviews------------------------------------------ */
+.reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews .title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.reviews .group {
+  display: flex;
+}
+
+.reviews .group .item {
+  width: 300px;
+  height: 200px;
+  border-radius: 0.375rem;
+  border: solid 3px grey;
+  padding: 50px;
+  margin: 50px;
+}
+
+.reviews .person {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.reviews .group img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.reviews .name {
+  color: grey;
+  font-size: 13px;
+}
+
 /* articles------------------------------------------ */
 .article {
   display: flex;
@@ -466,13 +519,15 @@ h2 {
 }
 
 .article .group .item {
-  width: 570px;
+  width: 370px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 100px;
 }
 
 .article img {
-  width: 100%;
+  width: 304px;
+  height: 240px;
   border-radius: 0.375rem;
   margin-bottom: 30px;
 }
@@ -497,28 +552,56 @@ h2 {
   color: white;
   display: flex;
   flex-direction: column;
-
-  padding: 200px;
+  padding: 200px 200px 0 200px;
 }
 
 .logo_map {
   display: flex;
 }
-.footer .info .link {
-  display: flex;
-  flex-direction: column;
-}
+
 .map {
+  width: 800px;
+  height: 400px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  /* border: solid 1px white; */
 }
 
-.row .social {
+.footer .item {
+  width: 100px;
+  height: 100px;
+  /* border: solid 1px white; */
+}
+
+.footer .info .link {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 40px 0;
+}
+
+.footer .info .link a {
+  padding: 5px 0 0px 0;
+  color: white;
+  text-decoration: none;
+}
+
+.social {
   display: flex;
   justify-content: space-evenly;
-  padding: 50px;
+  padding: 100px;
 }
+
+.social a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
 .legal {
   background-color: black;
+  color: white;
   text-align: center;
+  padding: 10px;
 }
