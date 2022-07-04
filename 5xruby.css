@@ -6,8 +6,15 @@
   margin-right: auto;
 }
 /* nav_bar ---------------------------------------------------*/
+.nav_position {
+  width: 1200px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
 
 .nav_bar {
+  font-weight: bold;
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
@@ -24,24 +31,23 @@
   aspect-ratio: auto 40 / 24;
 }
 
+.nav_bar nav {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.nav_bar nav a {
+  text-decoration: none;
+  padding: 0 5px;
+  font-size: 15px;
+}
 /* banner ------------------------------------------------------*/
 
 .banner img {
   width: 100%;
   border-radius: 0.375rem;
   margin-bottom: 50px;
-}
-
-.nav_bar .link {
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-}
-
-.nav_bar .link a {
-  text-decoration: none;
-  padding: 0 5px;
-  font-size: 15px;
 }
 
 /* value----------------------------------------------------- */
